@@ -49,7 +49,7 @@ client.get<String>(url) {
 Be aware that to assign per-request timeout it's still required to have timeout feature installed. In case per-request configuration is specified without installed feature an `IllegalArgumentException` will be thrown with message _"Consider install HttpTimeout feature because request requires it to be installed"_.
 {: .note}
 
-In case of timeout an exception will be thrown. The type of exception depends on type of occured timeout: `HttpRequestTimeoutException` in case of request timeout, `HttpConnectTimeoutException` in case of connect timeout and `HttpSocketTimeoutException` in case of socket timeout.
+In case of timeout an exception will be thrown. The type of exception depends on type of occured timeout: `HttpRequestTimeoutException` in case of request timeout, `ConnectTimeoutException` in case of connect timeout and `SocketTimeoutException` in case of socket timeout.
 
 ## Platform-specific behaviour
 
